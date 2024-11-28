@@ -80,7 +80,7 @@ header {
     margin-right: auto;
     margin-top: 4em;
     padding: 1.25em 1em;
-    max-width: 70%;
+    max-width: 90%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -213,5 +213,9 @@ footer {
 
     .header {
         justify-content: start;
+    }
+
+    .card {
+        max-width: 70%;
     }
 }
