@@ -1,0 +1,217 @@
+/* Theming */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+
+:root {
+    --white: #f9f9f9;
+    --black: #36383F;
+    --gray: #85888C;
+    --neutral-gray: #f2f2f2;
+    --primary: #007bff;
+    --secondary: #003b5c;
+    --denim-blue: #1175a7;
+} /* variables*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--neutral-gray);
+    font-family: "Poppins", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+header {
+    background-color: white;
+}
+
+.header {
+    padding: 0em 1em;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+#facilities {
+    margin: 1.5em 0;
+    justify-content: center;
+    text-align: center;
+    gap: 2em;
+}
+
+.facility-cards {
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+.facility > img {
+    border-radius: 50%;
+    border: solid #0d2b4e 5px;
+}
+
+.card {
+    background-color: var(--white);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+    padding: 1.25em 1em;
+    max-width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card > h2 {
+    border-bottom: solid lightgray 1px;
+    padding-bottom: 0.5em;
+}
+
+.card > p {
+    padding-top: 1em;
+}
+
+.card > div.flex {
+    margin-top: 0.75em;
+    justify-content: center;
+}
+
+.card > div.flex {
+    margin-top: 0.75em;
+    justify-content: center;
+}
+
+.card button {
+    flex-grow: 1;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    border: none;
+    border-radius: 0;
+    background-color: var(--denim-blue);
+    color: var(--white);
+}
+
+.logo-text {
+    align-items: center;
+}
+
+.m-top-negative {
+    margin-top: -0.5em;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    color: var(--secondary);
+}
+
+h3 {
+    color: var(--secondary);
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#services-card {
+    margin-top: 6em;
+    flex-wrap: wrap;
+    gap: 4em;
+    width: 80%;
+    justify-content: center;
+}
+
+.service-card {
+    max-width: 20rem;
+    flex-shrink: 0;
+}
+
+#groceries {
+    background-size: cover;
+}
+
+div#groceries > img {
+    width: 100%;
+}
+
+footer {
+    margin-top: 4em;
+    text-align: center;
+    justify-content: center;
+    gap: 0.25em;
+    font-size: 0.75rem;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.icon {
+    border-radius: 50%;
+    border: solid #0d2b4e 5px;
+}
+
+.map {
+    display: none;
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(min-width:1000px) {
+    .map {
+        display: inline;
+    }
+
+    .listing {
+        display: flex;
+        align-items: center;
+    }
+
+    .facility {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2em;
+        flex-grow: 1;
+        width: 65%;
+    }
+
+    .facility-cards {
+        gap: 5em;
+    }
+
+    div.facility > div {
+        gap: 2em;
+    }
+
+    .header {
+        justify-content: start;
+    }
+}
